@@ -3,8 +3,11 @@ package com.spring.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.spring.model.Customer;
 
+@Repository("customerRepository") // adding for stereotype annotation
 public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 
 	/* (non-Javadoc)
